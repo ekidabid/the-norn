@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    -webkit-tap-highlight-color:transparent;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-family:'Segoe UI',sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #012a84 0%,
+        #0a3eb8 50%,
+        #012a84 100%
+    );
+
+    color:#fff;
+}
+
+.container{
+    width:100%;
+    max-width:430px;
+    padding:25px 20px 40px;
+    text-align:center;
+}
+
+.profile{
+    width:180px;
+    height:180px;
+
+    display:block;
+    margin:0 auto 25px;
+
+    border-radius:50%;
+    object-fit:cover;
+
+    border:6px solid #ffffff;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.25);
+
+    transition:.3s ease;
+}
+
+.profile:hover{
+    transform:scale(1.03);
+}
+
+h1{
+    font-size:4.2rem;
+    font-weight:800;
+    line-height:1;
+    letter-spacing:-2px;
+    margin-bottom:15px;
+}
+
+.bio{
+    font-size:1.15rem;
+    color:#e8eefc;
+    margin-bottom:40px;
+}
+
+.links{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+
+    min-height:76px;
+    width:100%;
+
+    padding:18px 24px;
+
+    text-decoration:none;
+    color:white;
+
+    font-size:1.2rem;
+    font-weight:600;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.12);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.12);
+
+    transition:all .25s ease;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+
+    background:rgba(255,255,255,.22);
+
+    box-shadow:
+        0 14px 30px rgba(0,0,0,.22);
+}
+
+.btn:active{
+    transform:scale(.98);
+}
+
+.btn i{
+    font-size:1.6rem;
+}
+
+.instagram:hover{
+    background:#E1306C;
+    border-color:#E1306C;
+}
+
+.whatsapp:hover{
+    background:#25D366;
+    border-color:#25D366;
+}
+
+.shopee:hover{
+    background:#EE4D2D;
+    border-color:#EE4D2D;
+}
+
+.tiktok:hover{
+    background:#181818;
+    border-color:#181818;
+}
+
+footer{
+    margin-top:35px;
+    color:#dbe7ff;
+    font-size:1rem;
+}
+
+@media (max-width:500px){
+
+    .container{
+        padding:20px 16px 30px;
+    }
+
+    .profile{
+        width:150px;
+        height:150px;
+    }
+
+    h1{
+        font-size:3.4rem;
+    }
+
+    .bio{
+        font-size:1rem;
+        margin-bottom:30px;
+    }
+
+    .btn{
+        min-height:68px;
+        font-size:1.05rem;
+        border-radius:20px;
+    }
+
+    .btn i{
+        font-size:1.4rem;
+    }
+}
